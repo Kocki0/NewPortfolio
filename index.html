@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- initial setup -->
+
     <title> Home </title> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <link rel="icon" type="image/x-icon" href="img/Logo.svg">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;700&display=swap');
-      </style>
-    <script src="https://kit.fontawesome.com/71c76fcd1c.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- fonts -->
+
+    <style>@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;700&display=swap');</style>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- scripts -->
+
+    <script src="https://kit.fontawesome.com/71c76fcd1c.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
 </head>
-<body>    
+<body>   
+    <!-- header --> 
 <header id="HeaderResponsive"> 
     <a href="index.html"><img class="logo" src="img/Logo.svg" alt="Filip Kocijan"></a>
     <div class="navtoggle" id="myNavtoggle" onscroll="changeNav()">  
@@ -30,57 +35,66 @@
     </nav> 
     </div>      
 </header>  
-    <a href="#top" class="totop"><img src="img/ToTop.png" alt="totop"></a> 
+
+    <!-- hero section -->
+
     <div class="main">
     <div class="mydesc">
-        <div class="scrolling-image"></div>
-        <h1 class="slideright slide-in">Hi! My name is Filip and I'm a <mark>UX Designer.</mark></h1> 
+        <div class="hero-desc">
+        <h1 class="slideright slide-in">Hi! My name is Filip and I'm a <mark data-value="UX Designer">UX Designer.</mark></h1> 
+        <p> <br /> </p>
+        <h4 class="slideright slide-in longer-slide">simplicity > complexity.</h4>
+        </div>
         <div class="head">
-            <div class="realhead slideup slide-in"><img src="img/Ja.svg" alt="head"></div>
-            <div class="backhead"></div>
+            <div class="realhead slideup slide-in" id="lottie-animation-isometric"></div>
         </div>   
     </div>
+
+    <!-- projects section -->
+
     <h2 id="projects">My projects</h2>
     <div class="project slide-in slideup">
         <div class="projectdesc">
-        <a href="electronics.html"><img class="projectimg" src="img/ElectronicsOverview.png" alt="projectpicture"></a>   
-        <h3>ElecTronics</h3>
-        <p> <br /> </p>
-        <p><mark>Topic:</mark> Speedrun to create a website to sell electronics to millenials.</p>
-        <p> <br /> </p>
-        <div class="projectinfo">
-        <div>
-            <p><mark>Tasks:</mark></p>
-            <ul>
+          <div class="project-img-container">
+            <a href="electronics.html"><img class="project-img" src="img/electronics_project_mockup.png" alt="project-picture"></a>  
+          </div>
+          <h3>ElecTronics</h3>
+          <p> <br /> </p>
+          <p><mark>Topic:</mark> Create a website to sell electronics to millenials.</p>
+          <p> <br /> </p>
+          <div class="projectinfo">
+            <div>
+              <p><mark>Tasks:</mark></p>
+              <ul>
                 <p>- User research</p>
                 <p>- Sitemap</p>
                 <p>- High fidelity prototype</p>
                 <p>- Accessibility</p>
+              </ul>
+            </div>
+            <p> <br /> </p>
+          <div>
+            <p><mark>Tools used:</mark></p>
+            <ul>
+              <p>- Figma</p>
             </ul>
-        </div>
-        <p> <br /> </p>
-        <div>
-        <p><mark>Tools used:</mark></p>
-        <ul>
-            <p>- Figma</p>
-        </ul>
-        </div>
-        <p> <br /> </p>
-        <div>
+          </div>
+          <p> <br /> </p>
+          <div>
             <p><mark>Time on project:</mark></p>
             <ul>
-                <p>- 2 days, 8 hours</p>
+                <p>- 2 days</p>
             </ul>
-        </div>
-        <p> <br /> </p>
-        <div>
+          </div>
+          <p> <br /> </p>
+          <div>
             <p><mark>Deliverables:</mark></p>
             <ul>
                 <p>- High-fi Mockup</p>
                 <p>- High-fi Mockup</p>
                 <p>- High-fi Prototype</p>
             </ul>
-        </div>
+          </div>
         </div>
         <p> <br /> </p>
         <a href="electronics.html" class="button-1" role="button">Read more</a>
@@ -89,7 +103,9 @@
     <div class="project slide-in slideup">
         <div class="projectdesc">
         <div>
-        <a href="nanopay.html"><img class="projectimg" src="img/NanoPayMockup.png" alt="projectpicture"></a>   
+          <div class="project-img-container">
+            <a href="nanopay.html"><img class="project-img" src="img/NanoPayMockup.png" alt="projectpicture"></a>  
+          </div>
         <div class="projectimglayover"></div>
         </div>
         <h3>Nanopay</h3>
@@ -111,6 +127,8 @@
         <p><mark>Tools used:</mark></p>
         <ul>
             <p>- Figma</p>
+            <p>- Google docs</p>
+            <p>- Zoom</p>
         </ul>
         </div>
         <p> <br /> </p>
@@ -135,34 +153,35 @@
     </div>
   
     <div id="about" class="content">
-            <img class="infohead slideup slide-in" src="img/Meabout2.jpg" alt="me">
             <div class="myinfo slideup slide-in">
-              <h2>My story</h2>
+              <h3>My story</h3>
               <p> <br /> </p>
-              <p>I'm currently studying JavaScript and Responsive web design in freeCodeCamp and plan to learn React and GSAP afterwards. Why am I studying programming if I am a UX designer? I actually think that any knowledge is progress, and coding is a very good skill to have, it's also fun. (when there is no issues)</p>
+              <p>I'm an ex-waitor and I loved working as one but I lost my passion for it through time, people change :). I was always interested in tech and thought of working in some part of it but I didn't know what was possible. I saw an ad for a course for UX design one day at work, and thought "This is something I might actually be interested in!".</p>
               <p> <br /> </p>
-              <p>I read books, workout, travel, and love learning topics that interest me. I got bored very easily at my older jobs because I did not like them and I didn't like the idea of there being nothing better to do in life than being a waitor so I took a chance and started studying UX.</p>
+              <p>So I enrolled in the course and it actually opened up my mind to what's possible, that I actually could succeed if I put my mind to something. See, I wasn't always using my mind, I usually let life control me. That changed when I started reading and setting goals for myself. Anyway, enough of me, send me a message and I will respond as fast as I can. Logging out...</p>
               <p> <br /> </p>
-              <p>I work hard, am eager to learn and love when my head hurts from too many problems because I see it as a sign of growth, so if you'd like to have someone like that on your team, feel free to contact me on socials or by mail. I'm looking to work for a company that has a position that requires me to work hard and long hours to prove myself.</p>
               <a href="files/CV.pdf" target="_blank" class="button-1" role="button">My CV</a>
             </div>
     </div>
     <div id="particles-js"></div>
     </div>              
     <footer id="contact">
-        <div>
-        <h6>Let's connect! Add me anywhere.</h6>
-        <p> <br /> </p>
-        <h6>My mail: filip.kocijan0@gmail.com</h6>
-        </div>
-        <section class="icons">
-        <ul class="icon-list">  
-        <li class="icon-item"><a href="https://www.linkedin.com/in/filip-kocijan-246507216/" target="_blank" class="icon"><i class="fa-brands fa-linkedin-in fa-2xl"></i></a></li>
-        <li class="icon-item"><a href="https://www.instagram.com/filip_kocijan/" target="_blank" class="icon"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
-        <li class="icon-item"><a href="https://www.behance.net/filipkocijan" target="_blank" class="icon"><i class="fa-brands fa-behance fa-2xl"></i></a></li>
+    <div class="footer-info">
+      <div>
+        <h6>Let's connect! Contact me through socials.</h6>
+      </div>
+      <section class="icons">
+          <ul class="icon-list">  
+          <li class="icon-item"><a href="https://www.linkedin.com/in/filip-kocijan-246507216/" target="_blank" class="icon"><i class="fa-brands fa-linkedin-in fa-2xl"></i></a></li>
+          <li class="icon-item"><a href="https://www.instagram.com/filip_kocijan/" target="_blank" class="icon"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
+          <li class="icon-item"><a href="https://www.behance.net/filipkocijan" target="_blank" class="icon"><i class="fa-brands fa-behance fa-2xl"></i></a></li>
         </ul>
-        </section>
+      </section>
         <h6>Copyright 2023. Filip Kocijan</h6>
+    </div>
+    <div>
+        <img class="footer-img" src="img/Ja.svg">
+    </div>
     </footer>
     <script src="js/jQuery.js"></script> 
     <script src="js/scripts.js"></script>

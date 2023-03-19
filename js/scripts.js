@@ -36,3 +36,12 @@ fading.forEach(fader => {
 sliders.forEach(slider => {
     appearOnScroll.observe(slider);
 });
+
+var animation = bodymovin.loadAnimation({
+    container: document.getElementById('lottie-animation-isometric'),
+    path: 'https://assets2.lottiefiles.com/packages/lf20_zvcyhdqv.json',
+    render: 'svg',
+    loop: true,
+    autoplay: true,
+    name: 'lottie animation' 
+});
